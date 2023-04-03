@@ -84,7 +84,9 @@ screen memo_scr:
 
 # сама игра
 label memoria_game:
-    scene black
+    scene bg main
+    with fade
+
     $ cards_init()
     $ cards_list = []
     python:
@@ -134,9 +136,11 @@ label memo_game_lose:
     hide screen memo_scr
     hide screen info_panel
 
-    $ renpy.pause (0.1, hard = True)
+    $ renpy.pause (0.2, hard = True)
 
-    scene bg wasted
+    show wasted
+    with pixellate
+
     play sound lose
 
     centered " "
@@ -150,7 +154,9 @@ label memo_game_win:
 
     $ renpy.pause (0.2, hard = True)
 
-    scene bg passed
+    show passed
+    with pixellate
+
     play sound win
 
     centered " "

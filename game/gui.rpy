@@ -67,7 +67,7 @@ define gui.name_text_font = "F77 Minecraft.ttf"
 define gui.interface_text_font = "F77 Minecraft.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 33
+define gui.text_size = 24
 
 ## Размер имён персонажей.
 define gui.name_text_size = 45
@@ -133,7 +133,7 @@ define gui.namebox_tile = False
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_ypos = 130
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 1116
